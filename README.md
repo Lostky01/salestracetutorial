@@ -1,2 +1,1 @@
-# salestracetutorial
-tutor
+# omsetkuAD
