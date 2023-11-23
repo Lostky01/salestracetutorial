@@ -26,3 +26,16 @@ Route::get('/invoice', function () {
 Route::get('/budgeting', function () {
     return view('data_budgeting');
 });
+Route::get('/customer', function () {
+    return view('customer');
+});
+Route::get('/brand', function () {
+    return view('brand');
+});
+
+Route::get('/group-sales', function () {
+    return view('data_groupsales');
+});
+Route::get('/target-sales', function () {
+    return view('data_targetsales');
+});
