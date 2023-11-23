@@ -20,3 +20,9 @@ Route::get('/', function () {
 Route::get('/quo', function () {
     return view('quo');
 });
+Route::get('/invoice', function () {
+    return view('data_invonce');
+});
+Route::get('/budgeting', function () {
+    return view('data_budgeting');
+});
