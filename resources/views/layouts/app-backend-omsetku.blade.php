@@ -22,7 +22,22 @@ $baseurl = 'https://omsetku.id/';
 
 
 
-    <title>Dashboard Omsetku - @yield('title')</title>
+    <title>Dashboard Omsetku | 
+        @if(\Illuminate\Support\Facades\Request::is('quo')) Quotation Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('invoice')) Invoice Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('budgeting')) Budgeting Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('customer')) Customer Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('brand')) Brand Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('group-sales')) Group Sales Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('target-sales')) Target Sales Tutorial
+        @else Sales Order Tutorial
+        @endif
+    </title>
+    
+    
+    
+    
+    
 
     {{-- @if (Session::has('download.in.the.next.request')) --}}
     {{-- <meta http-equiv="refresh" content="1;url={{ Session::get('download.in.the.next.request') }}"> --}}
