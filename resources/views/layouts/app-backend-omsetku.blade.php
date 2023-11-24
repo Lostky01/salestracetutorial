@@ -30,6 +30,10 @@ $baseurl = 'https://omsetku.id/';
         @elseif(\Illuminate\Support\Facades\Request::is('brand')) Brand Tutorial
         @elseif(\Illuminate\Support\Facades\Request::is('group-sales')) Group Sales Tutorial
         @elseif(\Illuminate\Support\Facades\Request::is('target-sales')) Target Sales Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('product')) Product Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('crm')) CRM Data Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('commission')) Commission Tutorial
+        @elseif(\Illuminate\Support\Facades\Request::is('reimburse')) Reimburse Tutorial
         @else Sales Order Tutorial
         @endif
     </title>
